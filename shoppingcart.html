@@ -1,64 +1,40 @@
 <html>
  <head>
  <link rel="stylesheet" href="shoppingcss.css"/>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
  </head>
 
  <body>
    <div class="Container">
-   <div class="bluecontainer">
+   <div class="bluecontainer", "inline-block";>
    <div id="mydiv"><p>Assorted Vegetables (1lb)</p>
    <img src="http://st.depositphotos.com/1823762/1431/i/950/depositphotos_14311177-Assorted-Vegetables.jpg" width="100" height="100"/>
-   <form name="myform" id="myform">
-     <button id="btn1" onclick="showMessage()">ADD TO CART</button>
+   <form name="myform" id="myform"><br>
+     <h6>$1.00</h6>
+	 <button id="btn1" onclick="showMessage()">ADD TO CART</button>
    </form></div>
    
    <div id="mydiv2"><p>Raspberries (1lb)</p>
    <img src="http://www.driscolls.com/sites/default/files/styles/header_berry_detail/public/1.2_Raspberry_Hero_0.jpg?itok=g61flCvF" width="100" height="100"/>
-   <form name="myform" id="myform">
+   <form name="myform" id="myform"><br>
+   	 <h6>$2.50</h6>
+	 <h5><table>
+     <tr><td>QTY:</td></tr><tr><td><input type="number" name="QTY" value=++"1" min="0" size="1"/></td></tr>
+     </table></h5>
      <button id="btn2" onclick="showMessage2()">ADD TO CART</button>
    </form></div>
    
 <div id="mydiv3"><p>1 Fresh Kiwi</p>
 	<img src="http://upload.wikimedia.org/wikipedia/commons/6/6d/Kiwi_(Actinidia_chinensis)_2_Luc_Viatour.jpg" width="100" height="100"/>
-   <form name="myform" id="myform">
-     <button id="btn3" onclick="showMessage3()">ADD TO CART</button>
+   <form name="myform" id="myform"><br>
+     <h6>$0.30</h6>
+	 <h5><table> 
+     <tr><td>QTY:</td></tr><tr><td><input type="number" name="QTY" value="1" min="0" size="1"/></td></tr>
+     </table></h5>
+	 <button id="btn3" onclick="showMessage3()">ADD TO CART</button>
    </form></div>
    </div></div>
-   <script>
-     function showMessage() {
-        // populate the 'div' element
-        var div1 = document.getElementById("mydiv");
-        div1.innerHTML = "Successfully added";
-
-        // display a message via console.log
-          console.log("Successfully added");
-
-        // display an alert
-        alert("Successfully added");
-     }
-	  function showMessage2() {
-        // populate the 'div' element
-        var div1 = document.getElementById("mydiv2");
-        div1.innerHTML = "Successfully added";
-
-        // display a message via console.log
-          console.log("Successfully added");
-
-        // display an alert
-        alert("Successfully added");
-     }
-	 function showMessage3() {
-        // populate the 'div' element
-        var div1 = document.getElementById("mydiv3");
-        div1.innerHTML = "Successfully added";
-
-        // display a message via console.log
-          console.log("Successfully added");
-
-        // display an alert
-        alert("Successfully added");
-     }
-   </script>
+   
  </body>
 </html>
  
