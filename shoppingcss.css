@@ -5,6 +5,21 @@ input {
 {
   display: block;
 
-  max-width: 54%;
+  max-width: 50%;
   height: auto;
+}
+.container  {
+background-color: #128099;
+}
+
+body  {
+background-color: #000000;
+}
+
+.whiteArea {
+background-color: #FFFFFF;  
+}
+
+.greyArea  {
+background-color: #EEEEEE; 
 }
