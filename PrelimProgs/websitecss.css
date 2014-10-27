@@ -1,0 +1,25 @@
+.article  {
+color: black;
+font-family: Century;
+font-weight: bold;
+}
+
+.section  {
+background-color: black;
+}
+
+body { 
+  background: url(http://upload.wikimedia.org/wikipedia/commons/a/aa/Joying_in_lines_-_digital_abstract_art-print,_after_a_destroyed_watercolor_painting_-_artist_Fons_Heijnsbroek.jpg); 
+  background-size: cover;
+}
+.videopadding  {
+padding: 0px;
+}
+.vidpadrightvids  {
+padding-top: -500px;
+}
+.section-header  {
+color: green;
+font-family: Century;
+font-weight: bold;
+}

@@ -1,0 +1,22 @@
+body  {
+background-image: url(http://www.presidio.gov/about/archaeology/PublishingImages/elpresidio620x390.jpg);
+background-size: cover;
+}
+
+.well  {
+background-color: rgba(245, 245, 245, 0);
+}
+
+.jumbotron  {
+background-color: rgba(158, 131, 160, 0.2);
+}
+
+a.button	{
+background: tan;
+color: white;
+padding: 0px;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+border-radius: 5px;
+}
