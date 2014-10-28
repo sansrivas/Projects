@@ -1,0 +1,26 @@
+.calculator-body{
+  color: teal;
+  display: inline;
+  float: right;
+  padding: 100px;
+}
+
+table {
+  border: 2px solid red;
+  background-color: gold;
+  font-family: arial;
+}
+
+table [border]  {
+  background-color: brown;
+}
+
+body  {
+  background-color: #E6FEEC;
+}
+
+h1  {
+  font-family: century;
+  float: right;
+  padding: 100px;
+}

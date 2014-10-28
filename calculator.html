@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+<head>
+<link rel="stylesheet" href="calculatorstyle.css">
+</head>
+<body>
+<h1>Bare Bonesy Calculator</h1>
+<div class="calculator-body">
+  <form name="Calc">
+  <table border=200>
+      <tr>
+      <td>
+<input type="text" id="Input" Size="20">
+      </td>
+      </tr>
+</div>
+<tr>
+  <td>
+    <input type="button" id="seven" value="  7  " onClick="Calc.Input.value += '7'">
+    <input type="button" id="eight" value="  8  " onCLick="Calc.Input.value += '8'">
+    <input type="button" id="nine"  value="  9  " onClick="Calc.Input.value += '9'">
+    <input type="button" id="plus"  value="  +  " onClick="Calc.Input.value += '+'">
+    <br>
+    <input type="button" id="four"  value="  4  " onClick="Calc.Input.value += '4'">
+    <input type="button" id="five"  value="  5  " onCLick="Calc.Input.value += '5'">
+    <input type="button" id="six"   value="  6  " onClick="Calc.Input.value += '6'">
+    <input type="button" id="minus" value="  -  " onClick="Calc.Input.value += '-'">
+    <br>
+    <input type="button" id="one"   value="  1  " onClick="Calc.Input.value += '1'">
+    <input type="button" id="two"   value="  2  " onCLick="Calc.Input.value += '2'">
+    <input type="button" id="three" value="  3  " onClick="Calc.Input.value += '3'">
+    <input type="button" id="times" value="  x  " onClick="Calc.Input.value += '*'">
+    <br>
+    <input type="button" id="clear" value="  c  " onClick="Calc.Input.value = ''">
+    <input type="button" id="zero"  value="  0  " onClick="Calc.Input.value += '0'">
+    <input type="button" id="DoIt"  value="  =  " onClick="Calc.Input.value = eval(Calc.Input.value)">
+    <input type="button" id="div"   value="  /  " onClick="Calc.Input.value += '/'">
+    <br>
+  </td>
+</tr>
+</table>
+</form>
+<ul>
+</ul>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$( "#DoIt" ).click(function() {
+    console.log( "ready!" );//let us know DOM is ready.
+    var result = $('#Input').val();
+    //$("#Input").attr('result');
+    console.log("result is " + result);
+    //$('#Input').val('result');
+    if (result !== "")  {
+      $("ul").append($("<li>").text(result));
+      //$ (this).val(result);
+    }
+});
+</script>
+</body>
+</html>
